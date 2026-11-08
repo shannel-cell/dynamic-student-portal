@@ -22,7 +22,7 @@
         <h2>Join the Portal</h2>
         <p>Create your student profile in two minutes. Fields marked with * are required.</p>
 
-        <form action="#" method="post">
+        <form id="registerForm" action="#" method="post">
             <p>
                 <label for="fullname">Full Name *</label>
                 <input type="text" id="fullname" name="fullname" placeholder="e.g. Amina Wanjiru" minlength="3"
@@ -94,6 +94,20 @@
     <footer>
         <p>&copy; 2026 The Dynamic Student Portal. All rights reserved.</p>
     </footer>
+    <script>
+        const form = document.getElementById("registerForm");
+
+        form.addEventListener("submit", function (event) {
+            const name = document.getElementById("fullname").value.trim();
+
+            if (name === "") {
+                alert("Please enter your full name before submitting.");
+                event.preventDefault();
+            } else {
+                console.log("Form submitted for " + name);
+            }
+        });
+    </script>
 </body>
 
 </html>
