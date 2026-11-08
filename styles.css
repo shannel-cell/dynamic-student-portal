@@ -148,6 +148,7 @@ label[for="course"] {
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 input[type="date"],
 select {
   padding: 10px 12px;
@@ -235,6 +236,7 @@ footer p {
 
   label[for="fullname"],
   label[for="email"],
+  label[for="phone"],
   label[for="dob"],
   label[for="course"] {
     display: block;

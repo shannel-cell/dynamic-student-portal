@@ -18,10 +18,22 @@ for (let i = 1; i <= 5; i++) {
     console.log("Number: " + i);
 }
 // ----- Lab 8: arrays, functions and events -----
+class Student {
+    constructor(name, email, course, year) {
+        this.name = name;
+        this.email = email;
+        this.course = course;
+        this.year = year;
+    }
+
+    getSummary() {
+        return this.name + " (" + this.email + ") - " + this.course + ", Year " + this.year;
+    }
+}
 function addStudentToPage(student) {
     const list = document.getElementById("student-list");
     const item = document.createElement("li");
-    item.textContent = student.name + " - " + student.course + " (Year " + student.year + ")";
+    item.textContent = student.getSummary();
     list.appendChild(item);
 }
 
@@ -43,7 +55,10 @@ function loadStudents() {
             }
             return response.json();
         })
-        .then(function (students) {
+        .then(function (data) {
+            const students = data.map(function (s) {
+                return new Student(s.name, s.email, s.course, s.year);
+            });
             displayAllStudents(students);
         })
         .catch(function (error) {

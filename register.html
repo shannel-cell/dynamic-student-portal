@@ -22,7 +22,7 @@
         <h2>Join the Portal</h2>
         <p>Create your student profile in two minutes. Fields marked with * are required.</p>
 
-        <form id="registerForm" action="#" method="post">
+        <form id="registerForm" action="#" method="post" novalidate>
             <p>
                 <label for="fullname">Full Name *</label>
                 <input type="text" id="fullname" name="fullname" placeholder="e.g. Amina Wanjiru" minlength="3"
@@ -97,14 +97,28 @@
     <script>
         const form = document.getElementById("registerForm");
 
+        // Regex patterns
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const namePattern = /^[A-Za-z\s]+$/;
+
         form.addEventListener("submit", function (event) {
             const name = document.getElementById("fullname").value.trim();
+            const email = document.getElementById("email").value.trim();
 
             if (name === "") {
-                alert("Please enter your full name before submitting.");
+                alert("Name is required. Please enter your full name.");
+                event.preventDefault();
+            } else if (!namePattern.test(name)) {
+                alert("Name can only contain letters and spaces.");
+                event.preventDefault();
+            } else if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address, for example name@example.com.");
                 event.preventDefault();
             } else {
-                console.log("Form submitted for " + name);
+                event.preventDefault();
+                console.log("Form submitted for " + name + " (" + email + ")");
+                alert("Thank you, " + name + "! Your registration was received.");
+                form.reset();
             }
         });
     </script>

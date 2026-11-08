@@ -1,26 +1,31 @@
 [
     {
         "name": "Amina Wanjiru",
+        "email": "amina@kabarak.ac.ke",
         "course": "Computer Science",
         "year": 2
     },
     {
         "name": "Brian Otieno",
+        "email": "brian@kabarak.ac.ke",
         "course": "Information Technology",
         "year": 1
     },
     {
         "name": "Cynthia Mwangi",
+        "email": "cynthia@kabarak.ac.ke",
         "course": "Nursing",
         "year": 3
     },
     {
         "name": "David Kipchoge",
+        "email": "david@kabarak.ac.ke",
         "course": "Business Education",
         "year": 2
     },
     {
         "name": "Esther Achieng",
+        "email": "esther@kabarak.ac.ke",
         "course": "Education",
         "year": 4
     }
