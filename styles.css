@@ -140,6 +140,7 @@ label {
 
 label[for="fullname"],
 label[for="email"],
+label[for="phone"],
 label[for="dob"],
 label[for="course"] {
   display: inline-block;
