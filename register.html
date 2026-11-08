@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - The Dynamic Student Portal</title>
+</head>
+
+<body>
+    <header>
+        <h1>The Dynamic Student Portal</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="timetable.html">Timetable</a> |
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Student Registration</h2>
+
+        <form action="#" method="post">
+            <p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </p>
+
+            <p>
+                <label for="course">Course of Study:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select a course --</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                    <option value="be">Business Education</option>
+                    <option value="nu">Nursing</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <p>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms</label>
+            </p>
+
+            <button type="submit">Register</button>
+        </form>
+        <h3>Admission Requirements</h3>
+        <ul>
+            <li>Kenya Certificate of Secondary Education (KCSE) result slip</li>
+            <li>Copy of national ID or birth certificate</li>
+            <li>Two passport-size photographs</li>
+            <li>Completed application fee payment receipt</li>
+        </ul>
+
+        <h3>Registration Steps</h3>
+        <ol>
+            <li>Fill in the registration form above</li>
+            <li>Submit your documents to the admissions office</li>
+            <li>Pay the registration fee</li>
+            <li>Collect your student ID and timetable</li>
+        </ol>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Dynamic Student Portal. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
