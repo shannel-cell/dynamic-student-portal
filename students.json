@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Amina Wanjiru",
+        "course": "Computer Science",
+        "year": 2
+    },
+    {
+        "name": "Brian Otieno",
+        "course": "Information Technology",
+        "year": 1
+    },
+    {
+        "name": "Cynthia Mwangi",
+        "course": "Nursing",
+        "year": 3
+    },
+    {
+        "name": "David Kipchoge",
+        "course": "Business Education",
+        "year": 2
+    },
+    {
+        "name": "Esther Achieng",
+        "course": "Education",
+        "year": 4
+    }
+]
