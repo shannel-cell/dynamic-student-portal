@@ -33,7 +33,10 @@ header h1 {
 }
 
 nav {
-  color: #ffffff;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
 }
 
 nav a {
@@ -238,4 +241,23 @@ footer p {
     min-width: 4px;
   }
 
+}
+
+/* ---------- Homepage two-column layout (CSS Grid) ---------- */
+.home-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.home-layout h1 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
 }
