@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - The Dynamic Student Portal</title>
+    <title>Join the Portal - The Dynamic Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -18,64 +19,73 @@
     </header>
 
     <main>
-        <h2>Student Registration</h2>
+        <h2>Join the Portal</h2>
+        <p>Create your student profile in two minutes. Fields marked with * are required.</p>
 
         <form action="#" method="post">
             <p>
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="e.g. Amina Wanjiru" minlength="3"
+                    required>
             </p>
 
             <p>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
             </p>
 
             <p>
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="07XX XXX XXX">
             </p>
 
             <p>
-                <label for="course">Course of Study:</label>
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" max="2010-12-31" required>
+            </p>
+
+            <p>
+                <label for="course">Course of Study *</label>
                 <select id="course" name="course" required>
-                    <option value="">-- Select a course --</option>
+                    <option value="">-- Choose your course --</option>
                     <option value="cs">Computer Science</option>
                     <option value="it">Information Technology</option>
                     <option value="be">Business Education</option>
                     <option value="nu">Nursing</option>
+                    <option value="ed">Education</option>
                 </select>
             </p>
 
             <fieldset>
-                <legend>Gender</legend>
+                <legend>Gender *</legend>
                 <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label>
                 <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
+                <label for="other">Prefer not to say</label>
             </fieldset>
 
             <p>
                 <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">I agree to the terms</label>
+                <label for="terms">I agree to the terms and conditions *</label>
             </p>
 
-            <button type="submit">Register</button>
+            <button type="submit">Create My Profile</button>
         </form>
-        <h3>Admission Requirements</h3>
+
+        <h3>What You Need to Apply</h3>
         <ul>
-            <li>Kenya Certificate of Secondary Education (KCSE) result slip</li>
-            <li>Copy of national ID or birth certificate</li>
+            <li>KCSE result slip</li>
+            <li>National ID or birth certificate</li>
             <li>Two passport-size photographs</li>
-            <li>Completed application fee payment receipt</li>
+            <li>Application fee receipt</li>
         </ul>
 
-        <h3>Registration Steps</h3>
+        <h3>How Registration Works</h3>
         <ol>
-            <li>Fill in the registration form above</li>
-            <li>Submit your documents to the admissions office</li>
+            <li>Complete the form above</li>
+            <li>Hand in your documents at the admissions office</li>
             <li>Pay the registration fee</li>
             <li>Collect your student ID and timetable</li>
         </ol>
